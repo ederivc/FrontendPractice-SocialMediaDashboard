@@ -1,4 +1,5 @@
 import React from "react";
+import { IMAGES } from "../../helpers/images";
 import { Card, CardBody, CardFooter, CardHeader } from "./styles";
 
 interface CardBigProps {
@@ -6,7 +7,7 @@ interface CardBigProps {
   headerText: string;
   bodyNumber: string;
   bodyText: string;
-  footerIcon: any;
+  footerIcon?: any;
   footerText: string;
   topCardBorderBg?: string;
   footerColor?: string;
@@ -33,7 +34,7 @@ function CardBig({
         <span>{bodyText}</span>
       </CardBody>
       <CardFooter footerColor={footerColor}>
-        <img src={footerIcon} alt="footer-icon" />
+        <img src={footerIcon ? footerIcon : IMAGES.iconUp} alt="footer-icon" />
         <span>{footerText}</span>
       </CardFooter>
     </Card>

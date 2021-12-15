@@ -20,14 +20,13 @@ const UpperWrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  border: 1px solid red;
   position: absolute;
-  top: 4rem;
+  top: 5rem;
   width: 1200px;
 `;
 
 const NavDetails = styled.div`
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -58,6 +57,14 @@ const GridContainer = styled.div`
   gap: 1rem;
 `;
 
+const BottomTittle = styled.div`
+  padding: 0 0.8rem;
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: -1.5rem;
+`;
+
 export {
   Wrapper,
   UpperWrapper,
@@ -66,4 +73,5 @@ export {
   ContentTitle,
   ToggleText,
   GridContainer,
+  BottomTittle,
 };

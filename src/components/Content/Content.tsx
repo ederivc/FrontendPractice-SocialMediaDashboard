@@ -1,9 +1,4 @@
 import React from "react";
-import { brightRed, instagramTopBg, youTubeTopBg } from "../../common";
-import { FlexContainer, GraySmallText } from "../../globalStyles";
-import { IMAGES } from "../../helpers/images";
-import CardBig from "../CardBig/CardBig";
-import SwitchButton from "../SwitchButton/SwitchButton";
 import {
   ContentTitle,
   ContentWrapper,
@@ -12,7 +7,12 @@ import {
   UpperWrapper,
   ToggleText,
   GridContainer,
+  BottomTittle,
 } from "./styles";
+import SwitchButton from "../SwitchButton/SwitchButton";
+import { FlexContainer, GraySmallText } from "../../globalStyles";
+import { CardBigSection } from "../CardBigSection/CardBigSection";
+import { CardSmallSection } from "../CardSmallSection/CardSmallSection";
 
 function Content() {
   return (
@@ -30,41 +30,13 @@ function Content() {
           </FlexContainer>
         </NavDetails>
         <GridContainer>
-          <CardBig
-            headerIcon={IMAGES.iconFacebook}
-            headerText="@nathanf"
-            bodyNumber="1987"
-            bodyText="FOLLOWERS"
-            footerIcon={IMAGES.iconUp}
-            footerText="12 Today"
-          />
-          <CardBig
-            headerIcon={IMAGES.iconTwitter}
-            headerText="@nathanf"
-            bodyNumber="1044"
-            bodyText="FOLLOWERS"
-            footerIcon={IMAGES.iconUp}
-            footerText="99 Today"
-          />
-          <CardBig
-            headerIcon={IMAGES.iconInstagram}
-            headerText="@realnathanf"
-            bodyNumber="11k"
-            bodyText="FOLLOWERS"
-            footerIcon={IMAGES.iconUp}
-            footerText="1099 Today"
-            topCardBorderBg={instagramTopBg}
-          />
-          <CardBig
-            headerIcon={IMAGES.iconYoutube}
-            headerText="Nathan F."
-            bodyNumber="8239"
-            bodyText="SUBSCRIBERS"
-            footerIcon={IMAGES.iconDown}
-            footerText="144 Today"
-            topCardBorderBg={youTubeTopBg}
-            footerColor={brightRed}
-          />
+          <CardBigSection />
+        </GridContainer>
+        <BottomTittle>
+          <h3>Overview - Today</h3>
+        </BottomTittle>
+        <GridContainer>
+          <CardSmallSection />
         </GridContainer>
       </ContentWrapper>
     </Wrapper>

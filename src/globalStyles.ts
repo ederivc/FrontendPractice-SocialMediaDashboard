@@ -33,7 +33,7 @@ const GraySmallText = styled.span`
 
 const FlexContainer = styled.div`
   display: flex;
-  justify: center;
+  justify-content: center;
   align-items: center;
 `;
 

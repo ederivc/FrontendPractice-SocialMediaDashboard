@@ -37,10 +37,10 @@ const Card = styled.div<CardProps>`
   border-left: 0;
   border-right: 0;
   background-color: ${darkCardBg};
-  cursor: pointer;
   transition: all 0.5s ease-in;
 
   &:hover {
+    cursor: pointer;
     filter: brightness(1.2);
   }
 `;
